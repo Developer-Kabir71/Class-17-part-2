@@ -159,6 +159,7 @@ html{
     padding: 15px 25px;
     border-radius: 10px;
     margin: 0 10px;
+    border: 1px solid transparent;
     transition: .4s;
 }
 .bbtn1:hover{
