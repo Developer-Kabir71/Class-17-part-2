@@ -1,0 +1,394 @@
+
+/* DEFAUT CSS START */
+*{
+    margin: 0;
+    padding: 0;
+}
+.fixed-width{
+    width: 1200px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.f-left{
+    float: left;
+}
+.f-right{
+    float: right;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+    max-width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* DEFAUT CSS END */
+
+/* HEADER SECTION CSS START */
+.header{
+    background-color: #000;
+    padding: 5px 0;
+}
+.logo{
+    width: 20%;
+}
+.logo img{
+    width: 80px;
+    margin-top: 5px;
+}
+.menu{
+    width: 80%;
+    text-align: right;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    display: inline-block;
+    margin-left: -4px;
+}
+.menu ul li i{
+    font-weight: 900;
+    font-size: 25px;
+}
+.menu ul li a{
+    display: inline-block;
+    color: white;
+    font-size: 23px;
+    padding: 0 20px;
+    line-height: 60px;
+    position: relative;
+}
+.menu ul li a::after{
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 65%;
+    height: 2px;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+.menu ul li a:hover::after{
+    opacity: 1;
+    visibility: visible;
+}
+/* Drop Down Start */
+.menu ul li{
+    position: relative; 
+}
+.menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 130px;
+    background-color: #000;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.menu ul li ul li{
+    display: block;
+    margin-left: 0px;
+}
+.menu ul li ul li a{
+    display: block;
+}
+.menu ul li ul li a::after{
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 50%;
+    height: 2px;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+.menu ul li ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+/* HEADER SECTION CSS END */
+
+/* BANNER SECTION CSS START */
+.banner{ 
+    background-image: url(./banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 200px 0;
+}
+.banner-content{
+    width: 900px;
+    margin: 0 auto;
+}
+.banner-content h1{
+    font-size: 40px;
+    color: #223127;
+    margin-top: -20px;
+}
+.banner-content h4{
+    font-size: 25px;
+    padding: 20px 0;
+}
+.bbtn1{
+    color: white;
+    background-color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin: 0 10px;
+    transition: .4s;
+}
+.bbtn1:hover{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+.bbtn2{
+    color: black;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin: 0 10px;
+    transition: .4s;
+}
+.bbtn2:hover{
+    color: white;
+    background-color: #000;
+}
+/* BANNER SECTION CSS END */
+
+/* ABOUT SECTION CSS START */
+.about{
+    background-color: #87A471;
+    padding: 50px 0;
+}
+.head{
+    text-align: center;
+}
+.heading{
+    font-size: 45px;
+    font-weight: 600;
+    color: #E8DFDA;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    text-shadow: 1px 1px 6px 8px #ddd;
+    padding-top: 20px;
+}
+.content-left{
+    width: 60%;
+    text-align: center;
+}
+.content-right{
+    width: 40%;
+}
+.content-left p{
+    color: white;
+    width: 400px;
+    display: inline-block;
+    margin-top: 70px;
+}
+.content-right img{
+    width: 250px;
+    display: inline-block;
+    margin-top: 30px;
+}
+/* ABOUT SECTION CSS END */
+
+/*  SERVICE SECTION CSS START */
+.service{
+    background-color: #606A64;
+    padding: 40px 0;
+}
+.content1{
+    text-align: center;
+} 
+.content1 h3{
+    font-size: 30px;
+    color: white;
+    padding: 20px 0;
+}
+.content1 p{
+    color: #D4D4D4;
+    width: 600px;
+    margin: 0 auto;
+} 
+.content-box{
+    width: 26.3%;
+    background-color: #fff;
+    margin-right:7%;
+    margin-left: 2%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-top: 70px;
+}
+.inner-left{
+    width: 10%;
+} 
+.inner-right{
+    width: 85%;
+} 
+.inner-right h3{
+    color: #415D7B;
+    font-size: 20px;
+}
+.inner-right p{
+    color: #A8B5C1;
+}
+.content2 .content-box:nth-child(3){
+    margin-right: 0px;
+}
+/*  SERVICE SECTION CSS END */
+
+/* PRODUCT SECTION CSS START */
+.product{
+    background-color: #87A471;
+    padding: 20px 0;
+    color: white;
+}
+.main-div1{
+    text-align: center;
+}
+.main-div1 h2{
+    font-size: 30px;
+    padding-bottom: 20px;
+} 
+.main-div2{
+    margin-top: 50px;
+    text-align: center;
+}
+.sub1{
+    display: inline-block;
+    border: 1px solid #fff;
+    margin: 0 30px;
+} 
+.sub1 img{
+    width: 300px;
+}
+.sub1 p{
+    font-size: 11px;
+    padding: 5px 0;
+    color: rgba(0, 0, 255, 0.541);
+}
+.sub1 span{
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.main-div3{
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+.img1{
+    display: inline-block; 
+    margin: 0 12px;
+}
+/* PRODUCT SECTION CSS END */
+
+/* TEAM SECTION CSS START */
+.team{
+    padding: 40px 0;
+    background-color: #5B9776;
+}
+.team-head{
+    text-align: center;
+}
+.team-head h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: #E8DFDA;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    text-shadow: 1px 1px 6px 8px #ddd; 
+}
+.member{
+    margin-top: 50px;
+}
+.member-box{
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+}
+.member-box ul{
+    list-style: none;
+}
+.member-box ul li{
+    display: inline-block;
+}
+.member-box ul li a{
+    display: inline-block;
+    color: white;
+    font-size: 35px;
+    padding: 10px;
+    transition: .4s;
+}
+.member-box ul li a:hover{
+    color: rgba(248, 248, 24, 0.856);
+}
+/* TEAM SECTION CSS END */
+
+/* CONTACT SECTION CSS START */
+.contact{
+    background-color: #606A64;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+}
+.contact h2{
+    font-size: 35px;
+}
+.contact p{
+    width: 600px;
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 20px 0;
+    color: #AEB1AE;
+}
+.bbtn{
+    background-color: #00BC9C;
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: .4s;
+}
+.bbtn:hover{
+    background-color: #456078;
+}
+/* CONTACT SECTION CSS END */
+
+/*  FOOTER SECTION CSS START */
+footer{
+    background-color: #000;
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+}
+/*  FOOTER SECTION CSS END */
